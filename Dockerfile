@@ -5,6 +5,7 @@ RUN xcaddy build \
   --with github.com/caddyserver/cache-handler \
   --with github.com/caddy-dns/route53 \
   --with github.com/caddy-dns/cloudflare \
+  --with github.com/caddy-dns/cloudns \
   --with github.com/mholt/caddy-ratelimit \
   --with github.com/fvbommel/caddy-dns-ip-range \
   --with github.com/WeidiDeng/caddy-cloudflare-ip \
