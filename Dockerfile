@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/caddy
-FROM caddy:2.10.0-builder AS builder
+FROM caddy:2.10.2-builder AS builder
 
 # https://github.com/caddy-dns/route53/issues/58
 RUN git clone https://github.com/theAeon/route53.git
@@ -15,6 +15,6 @@ RUN xcaddy build \
   --with github.com/xcaddyplugins/caddy-trusted-cloudfront \
   --with github.com/xcaddyplugins/caddy-trusted-gcp-cloudcdn
 
-FROM caddy:2.10.0
+FROM caddy:2.10.2
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
