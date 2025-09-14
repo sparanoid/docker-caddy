@@ -9,6 +9,7 @@ RUN xcaddy build \
   --with github.com/caddy-dns/route53 --replace github.com/libdns/route53@v1.5.1=./route53 \
   --with github.com/caddy-dns/cloudflare \
   --with github.com/caddy-dns/cloudns \
+  --with github.com/caddy-dns/tencentcloud \
   --with github.com/mholt/caddy-ratelimit \
   --with github.com/fvbommel/caddy-dns-ip-range \
   --with github.com/WeidiDeng/caddy-cloudflare-ip \
