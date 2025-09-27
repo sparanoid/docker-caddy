@@ -2,7 +2,7 @@
 FROM caddy:2.10.2-builder AS builder
 
 # https://github.com/caddy-dns/route53/issues/58
-RUN git clone https://github.com/theAeon/route53.git
+RUN git clone https://github.com/libdns/route53
 
 RUN xcaddy build \
   --with github.com/caddyserver/cache-handler \
