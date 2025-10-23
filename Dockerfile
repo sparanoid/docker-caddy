@@ -6,7 +6,7 @@ RUN git clone https://github.com/libdns/route53
 
 RUN xcaddy build \
   --with github.com/caddyserver/cache-handler \
-  --with github.com/caddy-dns/route53 --replace github.com/libdns/route53@v1.5.1=./route53 \
+  --with github.com/caddy-dns/route53 \
   --with github.com/caddy-dns/cloudflare \
   --with github.com/caddy-dns/cloudns \
   --with github.com/caddy-dns/tencentcloud \
