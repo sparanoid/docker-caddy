@@ -14,7 +14,8 @@ RUN xcaddy build \
   --with github.com/fvbommel/caddy-dns-ip-range \
   --with github.com/WeidiDeng/caddy-cloudflare-ip \
   --with github.com/xcaddyplugins/caddy-trusted-cloudfront \
-  --with github.com/xcaddyplugins/caddy-trusted-gcp-cloudcdn
+  --with github.com/xcaddyplugins/caddy-trusted-gcp-cloudcdn \
+  --with pkg.jsn.cam/caddy-defender
 
 FROM caddy:2.10.2
 
