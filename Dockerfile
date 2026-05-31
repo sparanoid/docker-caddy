@@ -6,6 +6,7 @@ RUN git clone https://github.com/libdns/route53
 
 RUN xcaddy build \
   --with github.com/caddyserver/cache-handler \
+  --with github.com/caddyserver/replace-response \
   --with github.com/caddy-dns/route53 \
   --with github.com/caddy-dns/cloudflare \
   --with github.com/caddy-dns/cloudns \
@@ -14,8 +15,7 @@ RUN xcaddy build \
   --with github.com/fvbommel/caddy-dns-ip-range \
   --with github.com/WeidiDeng/caddy-cloudflare-ip \
   --with github.com/xcaddyplugins/caddy-trusted-cloudfront \
-  --with github.com/xcaddyplugins/caddy-trusted-gcp-cloudcdn \
-  --with pkg.jsn.cam/caddy-defender
+  --with github.com/xcaddyplugins/caddy-trusted-gcp-cloudcdn
 
 FROM caddy:2.11.3
 
